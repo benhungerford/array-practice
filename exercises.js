@@ -5,9 +5,22 @@
 
 // Put your answer below -------------------------
 
+function myFunction(str, i) {
+  let arr = [];
+  arr.length = i;
+  const length = arr.length;
+  for (var j = 0; j < length; j++) {
+  arr[j] = str;
+}
+return arr;
+}
 
+console.log(myFunction('eight', 8));
 
-
+// arr.length(arguments[1]);
+// arr.forEach(function(item) {
+//   item.push(arguments[0]);
+// });
 
 
 
