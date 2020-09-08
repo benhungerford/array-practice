@@ -10,9 +10,9 @@ function myFunction(str, i) {
   arr.length = i;
   const length = arr.length;
   for (var j = 0; j < length; j++) {
-  arr[j] = str;
-}
-return arr;
+    arr[j] = str;
+  }
+  return arr;
 }
 
 console.log(myFunction('eight', 8));
@@ -26,7 +26,7 @@ console.log(myFunction('eight', 8));
 
 // Put your answer below -------------------------
 
-const test = [1,2,3,4];
+const test = [1, 2, 3, 4];
 
 function reverseArray(arr) {
   reverse = arr.reverse();
@@ -48,17 +48,12 @@ const thisArray = ['', 'this', 0, 'function', false, 'works']
 
 function removeFalsy(arr) {
   arr = arr.filter(function(n) {
-    return (n !== undefined && n !== null && n !== false && n !== 0 && n !== "" && isNaN()!=NaN);
+    return (n !== undefined && n !== null && n !== false && n !== 0 && n !== "" && isNaN() != NaN);
   });
   return arr;
 };
 
 console.log(removeFalsy(thisArray));
-
-
-
-
-
 
 // -----------------------------------------------
 
@@ -70,10 +65,18 @@ console.log(removeFalsy(thisArray));
 
 // Put your answer below -------------------------
 
+// const myArray = [
+//   ['name', 'Charlie'],
+//   ['color', 'brown'],
+//   ['age', 10]
+// ];
+//
+// function newArray(arr) {
+//
+//   return object;
+// };
 
-
-
-
+// console.log(newArray(myArray));
 
 
 
@@ -88,14 +91,14 @@ console.log(removeFalsy(thisArray));
 
 // Put your answer below -------------------------
 
+const elements = ['A', 'B', 'A', 'C', 'B'];
 
+function removeDuplicates(arr) {
+  let newArray = [...new Set(arr)];
+  return newArray
+}
 
-
-
-
-
-
-
+console.log(removeDuplicates(elements));
 
 // -----------------------------------------------
 
@@ -109,10 +112,18 @@ console.log(removeFalsy(thisArray));
 
 // Put your answer below -------------------------
 
+let list1 = [1,2,3]
+let list2 = [1,2,3]
+//sort to be in the same order
+//
+function comparison(a, b) {
+  for (let i = 0, i < a.length, i++){
+
+  }
+};
 
 
-
-
+console.log(comparison(list1, list2));
 
 
 
@@ -138,7 +149,6 @@ console.log(removeFalsy(thisArray));
 // ---------------------
 
 // Put your answer below -------------------------
-
 
 
 
