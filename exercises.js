@@ -17,16 +17,6 @@ return arr;
 
 console.log(myFunction('eight', 8));
 
-// arr.length(arguments[1]);
-// arr.forEach(function(item) {
-//   item.push(arguments[0]);
-// });
-
-
-
-
-
-
 // -----------------------------------------------
 
 // ---------------------
@@ -36,14 +26,15 @@ console.log(myFunction('eight', 8));
 
 // Put your answer below -------------------------
 
+const test = [1,2,3,4];
 
+function reverseArray(arr) {
+  reverse = arr.reverse();
+  return reverse;
+}
 
-
-
-
-
-
-
+console.log(test);
+console.log(reverseArray(test));
 
 // -----------------------------------------------
 
@@ -53,9 +44,16 @@ console.log(myFunction('eight', 8));
 
 // Put your answer below -------------------------
 
+const thisArray = ['', 'this', 0, 'function', false, 'works']
 
+function removeFalsy(arr) {
+  arr = arr.filter(function(n) {
+    return (n !== undefined && n !== null && n !== false && n !== 0 && n !== "" && isNaN()!=NaN);
+  });
+  return arr;
+};
 
-
+console.log(removeFalsy(thisArray));
 
 
 
