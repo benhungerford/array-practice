@@ -58,25 +58,31 @@ console.log(removeFalsy(thisArray));
 // -----------------------------------------------
 
 // ---------------------
-// Define a function that takes an array of nested arrays and returns an object composed of propeties equal to each nested array
+// Define a function that takes an array of nested arrays and returns an object composed of properties equal to each nested array
 // const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 // returns { name: 'Charlie', color: 'brown', age: 10 };
 // ---------------------
 
 // Put your answer below -------------------------
 
-// const myArray = [
-//   ['name', 'Charlie'],
-//   ['color', 'brown'],
-//   ['age', 10]
-// ];
-//
-// function newArray(arr) {
-//
-//   return object;
-// };
+const myArray = [
+  ['name', 'Charlie'],
+  ['color', 'brown'],
+  ['age', 10]
+];
 
-// console.log(newArray(myArray));
+function newArray(arr) {
+  let object = {};
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; i < arr[i].length; i++)
+    // if (arr[i][i]);
+    // object.push();
+  }
+  // return object.push();
+  return arr;
+};
+
+console.log(newArray(myArray));
 
 
 
@@ -112,18 +118,25 @@ console.log(removeDuplicates(elements));
 
 // Put your answer below -------------------------
 
-let list1 = [1,2,3]
-let list2 = [1,2,3]
+const arr1 = [1,2,3];
+const arr2 = [2,1,3];
 //sort to be in the same order
 //
-function comparison(a, b) {
-  for (let i = 0, i < a.length, i++){
+function comparison(one, two) {
+  one.sort((a, b) => a - b);
+  two.sort((a, b) => a - b);
 
+  for (let i = 0; i < one.length; i++) {
+    if (!one[i] === two[i]);
   }
+    return false; {
+    if (one[i] === two[i]);
+  }
+    return true;
 };
 
 
-console.log(comparison(list1, list2));
+console.log(comparison(arr1, arr2));
 
 
 
