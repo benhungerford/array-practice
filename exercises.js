@@ -68,19 +68,11 @@ console.log(removeFalsy(thisArray));
 const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 
 function newArray(arr) {
-  let object = {};
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr[i].length; j++) {
-      object.push();
-    }
-  return object;
+ const obj = Object.fromEntries(arr);
+ return(obj);
 };
 
 console.log(newArray(myArray));
-
-
-
-
 
 // -----------------------------------------------
 
@@ -119,7 +111,6 @@ const arr2 = [2,1,3];
 function comparison(one, two) {
   one = one.sort((a, b) => a - b);
   two = two.sort((a, b) => a - b);
-
   for (let i = 0; i < one.length; i++) {
     if (!one[i] === two[i]);
   } return false; {
