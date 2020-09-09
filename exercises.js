@@ -65,21 +65,15 @@ console.log(removeFalsy(thisArray));
 
 // Put your answer below -------------------------
 
-const myArray = [
-  ['name', 'Charlie'],
-  ['color', 'brown'],
-  ['age', 10]
-];
+const myArray = [['name', 'Charlie'], ['color', 'brown'], ['age', 10]];
 
 function newArray(arr) {
   let object = {};
   for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; i < arr[i].length; i++)
-    // if (arr[i][i]);
-    // object.push();
-  }
-  // return object.push();
-  return arr;
+    for (let j = 0; j < arr[i].length; j++) {
+      object.push();
+    }
+  return object;
 };
 
 console.log(newArray(myArray));
@@ -120,25 +114,21 @@ console.log(removeDuplicates(elements));
 
 const arr1 = [1,2,3];
 const arr2 = [2,1,3];
-//sort to be in the same order
-//
+
+
 function comparison(one, two) {
-  one.sort((a, b) => a - b);
-  two.sort((a, b) => a - b);
+  one = one.sort((a, b) => a - b);
+  two = two.sort((a, b) => a - b);
 
   for (let i = 0; i < one.length; i++) {
     if (!one[i] === two[i]);
-  }
-    return false; {
+  } return false; {
     if (one[i] === two[i]);
-  }
-    return true;
+  } return true;
 };
 
 
 console.log(comparison(arr1, arr2));
-
-
 
 
 
