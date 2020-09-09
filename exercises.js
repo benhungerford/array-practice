@@ -111,11 +111,14 @@ const arr2 = [2,1,3];
 function comparison(one, two) {
   one = one.sort((a, b) => a - b);
   two = two.sort((a, b) => a - b);
+  console.log(one, two);
+
   for (let i = 0; i < one.length; i++) {
-    if (!one[i] === two[i]);
-  } return false; {
-    if (one[i] === two[i]);
-  } return true;
+    if (one[i] !== two[i]) {
+      return false;
+    }
+  }
+  return true;
 };
 
 
